@@ -1,0 +1,109 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* ===== ナビ（PC） ===== */
+.nav {
+  display: block;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.navList a {
+  position: relative;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.navList a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #6c63ff;
+  transition: width 0.2s ease;
+}
+
+.navList a:hover {
+  color: #6c63ff;
+}
+
+.navList a:hover::after {
+  width: 100%;
+}
+
+/* ===== ハンバーガー ===== */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuButton span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #333;
+  margin: 5px 0;
+}
+
+/* ===== SP ===== */
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    display: none;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navList li {
+    border-top: 1px solid #f0f0f0;
+  }
+
+  .navList a {
+    display: block;
+    padding: 16px 24px;
+  }
+}

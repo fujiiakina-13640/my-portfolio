@@ -1,0 +1,31 @@
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+.button img {
+  width: 60px;
+  height: 60px;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+/* SP微調整 */
+@media (max-width: 768px) {
+  .button {
+    right: 20px;
+    bottom: 40px;
+    width: 48px;
+    height: 48px;
+  }
+}

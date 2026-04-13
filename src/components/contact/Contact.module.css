@@ -1,0 +1,74 @@
+.contact {
+  text-align: center;
+  font-size: 18px;
+  padding: 80px 20px;
+  background-color: #f6f7fb;
+  border-radius: 8px;
+  gap: 32px;
+}
+
+.formTitle {
+  color: #555;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.formContainer {
+  display: inline-block;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formRow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contactLabel {
+  font-weight: bold;  
+}
+
+.contactTextbox {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 300px;
+  height: 20px;
+}
+
+.contactTextarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 350px;
+  height: 80px;
+}
+
+.submitButton {
+  display: block;
+  margin: 48px auto 0;
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 120px;
+  height: 50px;
+}
+
+.contactTextbox .contactTextarea {
+  position: relative;
+  left: 150px;
+}
